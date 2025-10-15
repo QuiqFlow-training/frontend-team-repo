@@ -1,3 +1,4 @@
+// A simple utility function to calculate the power of a number
 function power(base, exponent) {
   return base ** exponent;
 }
