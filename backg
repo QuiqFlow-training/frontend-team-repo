@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تغيير لون الخلفية</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      margin-top: 100px;
+      transition: background-color 0.5s; /* يجعل التغيير ناعم */
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>اضغط الزر لتغيير لون الخلفية 🎨</h2>
+  <button onclick="changeBackground()">غيّر اللون</button>
+
+  <script>
+    function changeBackground() {
+      // قائمة ألوان جاهزة
+      const colors = ["red", "green", "blue", "orange", "purple", "pink", "cyan", "yellow"];
+      
+      // اختيار لون عشوائي من القائمة
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      
+      // تغيير الخلفية
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
